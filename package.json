@@ -29,11 +29,9 @@
     "rehype-accessible-emojis": "^0.3.2",
     "rehype-figure-title": "^1.0.0"
   }
+"dependencies": {
+    "astro": "^4.0.0"
+  }, // <--- Comma added
   "pnpm": {
-  "onlyBuiltDependencies": [
-    "@tailwindcss/oxide",
-    "esbuild",
-    "sharp"
-  ]
-}
-}
+    "onlyBuiltDependencies": ["sharp"]
+  }
