@@ -18,22 +18,6 @@ export const WebsiteLinks = [
 		url: '/blog',
 	},
 	{
-		name: 'Projects',
-		url: '/projects',
-	},
-	{
-		name: 'Hire Me',
-		url: '/hire',
-	},
-	{
-		name: 'Uses',
-		url: '/uses',
-	},
-	{
-		name: 'Now',
-		url: '/now',
-	},
-	{
 		name: 'About',
 		url: '/about',
 	},
@@ -42,10 +26,10 @@ export const WebsiteLinks = [
 export const SocialLinks = [
 	{
 		name: 'LinkedIn',
-		url: 'https://www.linkedin.com/in/maxbytefield/',
+		url: 'https://www.linkedin.com/company/kokitree/',
 	},
 	{
-		name: 'X / Twitter',
-		url: 'https://twitter.com/maxbytefield',
+		name: 'Facebook',
+		url: 'https://www.facebook.com/kokitreedotcom',
 	},
 ]

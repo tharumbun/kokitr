@@ -28,7 +28,7 @@ export default defineConfig({
 		rehypePlugins: [rehypeFigureTitle, rehypeAccessibleEmojis],
     },
 
-    site: 'http://localhost:4321',
+    site: 'https://kokitree.com/',
 
     vite: {
         plugins: [tailwindcss()],
