@@ -1,15 +1,15 @@
 import type { PageProps } from "@/types";
 
 export const home: PageProps = {
-    title: "Max Bytefield - Developer Portfolio",
-    description: "Full-stack developer crafting elegant solutions with code, coffee, and a touch of chaos",
+    title: "Kokitree - digital consultancy in Cambodia",
+    description: "Phnom Penh–based digital consultancy in Cambodia",
     url: "home",
 };
 
 
 export const about: PageProps = {
-    title: "About - Max Bytefield",
-    description: "Get to know Max - developer, tinkerer, and perpetual learner with a passion for building cool stuff.",
+    title: "About - Kokitree",
+    description: "Phnom Penh–based digital consultancy in Cambodia",
     url: "home",
 };
 
@@ -20,7 +20,7 @@ export const error404: PageProps = {
 };
 
 export const blog: PageProps = {
-    title: "Blog - Max Bytefield",
-    description: "Adventures in code, debugging tales, and thoughts from the trenches of software development.",
+    title: "Blog - Kokitree",
+    description: "Phnom Penh digital strategy",
     url: "home",
 };
