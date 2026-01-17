@@ -1,11 +1,11 @@
 import type { Site } from "@/types";
 
 export const site: Site = {
-    title: "Max Bytefield",
-    description: "Full-stack developer, coffee enthusiast, and occasional debugger of life's mysteries",
-    author: "Max Bytefield",
-    creator: "@maxbytefield",
-    url: "http://localhost:4321",
+    title: "Kokitree",
+    description: "Kokitree is a Phnom Penh–based digital platform in Cambodia helping individuals and businesses build websites, grow their brand, and strengthen their online presence through blogging and smart digital strategy.",
+    author: "kokitree",
+    creator: "kokitree",
+    url: "https://kokitree.com",
 };
 
 export const WebsiteLinks = [
@@ -41,19 +41,11 @@ export const WebsiteLinks = [
 
 export const SocialLinks = [
 	{
-		name: 'GitHub',
-		url: 'https://github.com/maxbytefield',
-	},
-	{
 		name: 'LinkedIn',
 		url: 'https://www.linkedin.com/in/maxbytefield/',
 	},
 	{
 		name: 'X / Twitter',
 		url: 'https://twitter.com/maxbytefield',
-	},
-	{
-		name: 'Mastodon',
-		url: 'https://mastodon.social/@maxbytefield',
 	},
 ]
