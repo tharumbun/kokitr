@@ -1,0 +1,138 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+
+const title = "Astro Themes | Kokitree";
+const description = "Free, open-source Astro themes by Kokitree. Browse the collection and get the source on GitHub.";
+
+// TODO: replace the placeholder entries below with your real themes.
+// Add or remove objects freely; the page renders whatever is in this array.
+const themes = [
+	{
+		name: "Theme One",
+		description: "A fast, minimal blog theme with dark mode, RSS, and Markdown/MDX support.",
+		tags: ["Blog", "MDX", "Dark mode"],
+		github: "https://github.com/kokitree/theme-one",
+		demo: "https://theme-one.kokitree.com",
+		icon: "mdi:post-outline",
+	},
+	{
+		name: "Theme Two",
+		description: "A clean portfolio theme for developers and designers, with project pages and a contact section.",
+		tags: ["Portfolio", "Tailwind"],
+		github: "https://github.com/kokitree/theme-two",
+		demo: "",
+		icon: "mdi:briefcase-outline",
+	},
+	{
+		name: "Theme Three",
+		description: "A documentation theme with sidebar navigation, search, and versioned content.",
+		tags: ["Docs", "Search"],
+		github: "https://github.com/kokitree/theme-three",
+		demo: "",
+		icon: "mdi:book-open-variant",
+	},
+];
+---
+
+<Layout title={title} description={description} url="/themes" image="/themes">
+	<main class="app-container py-32 md:py-40 pt-40 md:pt-48">
+		<!-- Header -->
+		<div class="max-w-3xl mb-16 space-y-4">
+			<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+				Astro themes
+			</h1>
+			<p class="text-xl text-secondary dark:text-secondary-dark leading-relaxed">
+				Kokitree builds Astro themes that are fast, lightweight, and easy to make your own. Every theme is open source, so you can read the code, fork it, and ship it.
+			</p>
+		</div>
+
+		<!-- Themes -->
+		<section class="mb-20" aria-labelledby="themes-heading">
+			<h2 id="themes-heading" class="text-3xl font-bold mb-8">All themes</h2>
+
+			{themes.length > 0 ? (
+				<div class="grid md:grid-cols-2 gap-8">
+					{themes.map((theme) => (
+						<article class="flex flex-col p-6 rounded-lg border border-border dark:border-border-dark bg-surface dark:bg-surface-dark">
+							<Icon name={theme.icon} class="w-10 h-10 mb-4 text-primary dark:text-primary-dark" aria-hidden="true" />
+							<h3 class="text-2xl font-semibold mb-3">{theme.name}</h3>
+							<p class="text-secondary dark:text-secondary-dark leading-relaxed mb-4">
+								{theme.description}
+							</p>
+
+							{theme.tags?.length > 0 && (
+								<ul class="flex flex-wrap gap-2 mb-6 text-sm text-secondary dark:text-secondary-dark">
+									{theme.tags.map((tag) => (
+										<li class="px-2.5 py-1 rounded-full border border-border dark:border-border-dark">
+											{tag}
+										</li>
+									))}
+								</ul>
+							)}
+
+							<div class="flex flex-wrap gap-3 mt-auto">
+								<a
+									class="btn-secondary inline-flex items-center gap-2"
+									href={theme.github}
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label={`View ${theme.name} on GitHub`}
+								>
+									View on GitHub
+									<Icon height={18} name="mdi:github" aria-hidden="true" />
+								</a>
+								{theme.demo && (
+									<a
+										class="btn-secondary inline-flex items-center gap-2"
+										href={theme.demo}
+										target="_blank"
+										rel="noopener noreferrer"
+										aria-label={`Open the ${theme.name} live demo`}
+									>
+										Live demo
+										<Icon height={18} name="mdi:open-in-new" aria-hidden="true" />
+									</a>
+								)}
+							</div>
+						</article>
+					))}
+				</div>
+			) : (
+				<p class="text-secondary dark:text-secondary-dark">
+					No themes are listed yet. Check back soon, or follow Kokitree on GitHub.
+				</p>
+			)}
+		</section>
+
+		<!-- CTA -->
+		<section class="p-8 md:p-12 rounded-lg border border-border dark:border-border-dark bg-gradient-to-br from-primary/5 to-accent/5 dark:from-primary-dark/5 dark:to-accent-dark/5">
+			<div class="max-w-2xl">
+				<h2 class="text-3xl md:text-4xl font-bold mb-4">Need something custom?</h2>
+				<p class="text-lg text-secondary dark:text-secondary-dark leading-relaxed mb-6">
+					Found a bug, want a feature, or need a theme tailored to your brand? Open an issue on GitHub or send us a message.
+				</p>
+				<div class="flex flex-wrap gap-3">
+					<a
+						class="btn-secondary inline-flex items-center gap-2"
+						href="https://github.com/kokitree"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="Visit Kokitree on GitHub"
+					>
+						Kokitree on GitHub
+						<Icon height={18} name="mdi:github" aria-hidden="true" />
+					</a>
+					<a
+						class="btn-secondary inline-flex items-center gap-2"
+						href="mailto:hello@kokitree.com?subject=Astro%20Theme%20Inquiry"
+						aria-label="Email Kokitree about Astro themes"
+					>
+						Email us
+						<Icon height={18} name="mdi:email" aria-hidden="true" />
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>
