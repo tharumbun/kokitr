@@ -13,6 +13,11 @@ export const WebsiteLinks = [
 		name: 'Home',
 		url: '/',
 	},
+	{
+		name: 'Astro themes',
+		url: 'https://kokitree.com/astro/',
+	},
+
 		{
 		name: 'Projects',
 		url: '/projects',
