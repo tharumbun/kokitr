@@ -8,8 +8,6 @@ tags: ['AI', 'digital home', 'growth']
 
 ---
 
-# Why WordPress Is the Past, and Astro Is Tomorrow
-
 For nearly two decades, WordPress has been the backbone of the internet. It powered personal blogs, business websites, online magazines, portfolios, and just about everything in between. If you wanted to build a website without starting from scratch, WordPress was probably your first stop.
 
 I know. I've been there, too.
@@ -22,7 +20,7 @@ My answer is increasingly no.
 
 I'm looking toward Astro, a modern web framework that represents a different philosophy of building websites. And for content-driven websites, personal blogs, portfolios, and digital publications, I believe it points toward where the web is heading.
 
-## WordPress Was Built for a Different Internet
+## WordPress was built for a different Internet
 
 There is no denying WordPress's influence. It democratized website publishing and created an enormous ecosystem of developers, designers, hosting providers, and plugin creators.
 
@@ -38,7 +36,7 @@ But there is a bigger question worth considering: Why build a website that needs
 
 For many websites, that is more complexity than necessary.
 
-## Enter Astro: A Different Way to Build Websites
+## Enter Astro: A different way to build websites
 
 Astro takes a fundamentally different approach.
 
@@ -58,7 +56,7 @@ Your content can live in straightforward files, your website can be version-cont
 
 It is a simpler approach to publishing, at least for websites that do not need complex dynamic functionality.
 
-## Speed Is Not Just a Technical Detail
+## Speed is not just a technical detail
 
 Website performance matters.
 
@@ -84,7 +82,7 @@ Good content, useful information, clear site structure, accessible design, and r
 
 Astro does not magically make a website rank on Google. It simply gives developers a very good foundation for building a technically sound website.
 
-## The Freedom of Owning Your Content
+## The freedom of owning your content
 
 One of the things I appreciate most about Astro is its relationship with content.
 
@@ -102,7 +100,7 @@ For independent writers, photographers, bloggers, and small digital publishers, 
 
 You are not locked into a particular theme or page builder. You can design the experience around your content rather than forcing your content into the limitations of a template.
 
-## Is Astro Ready to Replace WordPress?
+## Is Astro ready to replace WordPress?
 
 Not entirely, and that is an important distinction.
 
@@ -118,7 +116,7 @@ There are also ways to combine the two. Astro can consume content from WordPress
 
 The future does not necessarily have to be an either-or decision.
 
-## The Web Is Moving Forward
+## The Web is moving forward
 
 I have been publishing online since 2004. Over the years, I've seen personal blogs evolve, content management systems become mainstream, social networks take over conversations, and mobile devices reshape how people consume information.
 
